@@ -54,6 +54,10 @@ DELETE GIT BRANCH               // delete branch locally
                                 // delete branch remotely
                                 git push origin --delete REMOTEBRANCHNAME
 
+GIT MERGE                       ensure merging branch has been pushed
+                                git checkout master
+                                git merge BRANCHNAME
+
 VALIDATIONS                     spec/models/album_spec.rb
                                 describe(Album) do
                                   ...
